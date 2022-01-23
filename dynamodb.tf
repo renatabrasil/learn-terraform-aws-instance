@@ -5,7 +5,9 @@ module "music" {
   hash_key  = "artist"
   range_key = "song"
 
-  billing_mode = "PROVISIONED"
+  billing_mode   = "PROVISIONED"
+  write_capacity = 1
+  read_capacity  = 1
 
   attributes = [
     {
