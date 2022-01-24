@@ -1,5 +1,5 @@
 module "kinesis-firehose" {
-  source                                = "felipefrizzo/kinesis-firehose/aws"
+  source                                = "git::https://github.com/felipefrizzo/terraform-aws-kinesis-firehose.git?ref=v0.0.4"
   region                                = "us-west-2"
   kinesis_firehose_stream_name          = "music_stream"
   kinesis_firehose_stream_backup_prefix = "bck"
