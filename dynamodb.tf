@@ -9,6 +9,9 @@ module "music" {
   write_capacity = 1
   read_capacity  = 1
 
+  stream_enabled   = true
+  stream_view_type = "OLD_IMAGE"
+
   attributes = [
     {
       name = "artist"
