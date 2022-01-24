@@ -9,7 +9,7 @@
 
 resource "aws_kinesis_firehose_delivery_stream" "extended_s3_stream" {
   name        = "music_stream"
-  destination = "music_s3"
+  destination = "extended_s3"
 
   extended_s3_configuration {
     role_arn   = aws_iam_role.firehose_role.arn
