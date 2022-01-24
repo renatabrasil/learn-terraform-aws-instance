@@ -7,8 +7,7 @@ terraform {
   }
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.27"
+      source = "hashicorp/aws"
     }
   }
 
@@ -16,8 +15,9 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default"
-  region  = "us-west-2"
+  profile                 = "default"
+  region                  = "us-west-2"
+  shared_credentials_file = "~/.aws/credentials"
 }
 
 // TODO: habilitar depois (as instancias estao off por enquanto. Motivo: dinheiro)
