@@ -31,7 +31,7 @@ resource "aws_kinesis_firehose_delivery_stream" "extended_s3_stream" {
 }
 
 resource "aws_s3_bucket" "music_s3" {
-  bucket = "music_s3"
+  bucket = "musics3"
   acl    = "private"
 }
 
